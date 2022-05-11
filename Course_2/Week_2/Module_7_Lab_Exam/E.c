@@ -1,20 +1,20 @@
 #include <stdio.h>
 int main()
 {
-    int x, y, n;
+    int X, Y, N;
 
-    scanf("%d %d %d", &x, &y, &n);
-    for (int i = 1; i <= n; i++)
+    scanf("%d %d %d", &X, &Y, &N);
+    for (int i = 1; i <= N; i++)
     {
-        if (i % x == 0)
+        if (i % X == 0)
         {
             printf("Fizz\n");
         }
-        else if (i % y == 0)
+        else if (i % Y == 0)
         {
             printf("Buzz\n");
         }
-        else if (i % x == 0 && i % y == 0)
+        else if (i % X == 0 && i % Y == 0)
         {
             printf("FizzBuzz\n");
         }
