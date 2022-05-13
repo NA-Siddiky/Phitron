@@ -26,3 +26,18 @@ int main()
 
     return 0;
 }
+
+else if scanf
+
+    scanf else if if else elseelse
+        scanf
+            scanf
+                scanf else if else if else scanfscanf
+                    scanf
+
+    else
+
+    scanfscanf
+        scanfscanf
+            scanfscanf
+                scanf
