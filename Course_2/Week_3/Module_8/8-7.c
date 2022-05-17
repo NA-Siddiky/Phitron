@@ -6,7 +6,7 @@ int main()
 {
     srand(time(0));
     int hidden = rand() % 100 + 1;
-    printf("%d\n", hidden);
+    // printf("%d\n", hidden);
 
     int num_of_guesses = 0;
 
@@ -29,5 +29,9 @@ int main()
             printf("Guess is too high!\n");
         }
         num_of_guesses++;
+    }
+    if (num_of_guesses == 10)
+    {
+        printf("You failed!\n");
     }
 }
