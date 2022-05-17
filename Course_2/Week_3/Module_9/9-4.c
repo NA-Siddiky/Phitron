@@ -22,19 +22,36 @@
 //     }
 // }
 
+// #include <stdio.h>
+// int main()
+// {
+//     char ch;
+//     scanf("%c", &ch);
+
+//     if ('A' <= ch && ch <= 'Z')
+//     {
+//         char lowercase = ch - 'A' + 'a';
+//         printf("Lowercase =%c", lowercase);
+//     }
+//     else
+//     {
+//         printf("No Uppercase character");
+//     }
+// }
+
 #include <stdio.h>
 int main()
 {
     char ch;
     scanf("%c", &ch);
 
-    if ('A' <= ch && ch <= 'Z')
+    if ('a' <= ch && ch <= 'z')
     {
-        char lowercase = ch - 'A' + 'a';
-        printf("Lowercase =%c", lowercase);
+        char uppercase = ch - 'a' + 'A';
+        printf("Uppercase =%c", uppercase);
     }
     else
     {
-        printf("No Uppercase character");
+        printf("No Lowercase character");
     }
 }
