@@ -12,13 +12,13 @@
 #include <stdio.h>
 int main()
 {
-    char a, b, c;
 
     int x = 0;
     int n;
     scanf("%d", &n);
     for (int i = 0; i < n; i++)
     {
+        char a, b, c;
         scanf("%c%c%c", &a, &b, &c);
         if (b == '+')
         {
@@ -31,3 +31,18 @@ int main()
     }
     printf("%d\n", x);
 }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int n, m;
+//     scanf("%d %d", &n, &m);
+//     if (n == m)
+//     {
+//         printf("Yes\n");
+//     }
+//     else
+//     {
+//         printf("No\n");
+//     }
+// }
