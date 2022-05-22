@@ -26,20 +26,24 @@ int main()
     int k, n, w;
     scanf("%d %d %d", &k, &n, &w);
 
-    int i = 1;
-    int cost;
+    // int i = 1;
+    // while (i <= w)
+    // {
+    //     int cost = i * k;
+    //     total_cost = cost + total_cost;
+    //     i++;
+    // };
+
     int total_cost = 0;
-    int borrow = 0;
-    while (i <= w)
+    for (int i = 1; i <= w; i++)
     {
-        cost = i * k;
+        int cost = i * k;
         total_cost = cost + total_cost;
-        i++;
-    };
+    }
     // printf("total cost: %d\n", total_cost);
 
     // need to borrow
-    borrow = (total_cost - n);
+    int borrow = (total_cost - n);
     printf("%d\n", borrow);
 
     return 0;
