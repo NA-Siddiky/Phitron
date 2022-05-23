@@ -38,12 +38,17 @@ int main()
     for (int i = 1; i <= w; i++)
     {
         int cost = i * k;
-        total_cost = cost + total_cost;
+        total_cost = total_cost + cost;
     }
     // printf("total cost: %d\n", total_cost);
 
     // need to borrow
-    int borrow = (total_cost - n);
+    int borrow = 0;
+    if (total_cost > n)
+    {
+        borrow = total_cost - n;
+    }
+
     printf("%d\n", borrow);
 
     return 0;
