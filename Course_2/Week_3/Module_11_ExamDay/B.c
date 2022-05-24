@@ -24,12 +24,14 @@ int main()
     for (int i = 0; i < n; i++)
     {
         scanf("%d %d", &p, &q);
+
         if (p < q)
         {
             count++;
         }
         else
         {
+            break;
         }
     }
     printf("%d\n", count);
