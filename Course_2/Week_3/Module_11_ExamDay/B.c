@@ -25,14 +25,19 @@ int main()
     {
         scanf("%d %d", &p, &q);
 
-        if (p < q)
+        if (q - p >= 2)
         {
             count++;
         }
-        else
-        {
-            break;
-        }
+
+        // if (p < q)
+        // {
+        //     count++;
+        // }
+        // else
+        // {
+        //     break;
+        // }
     }
     printf("%d\n", count);
 
