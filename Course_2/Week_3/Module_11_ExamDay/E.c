@@ -27,22 +27,36 @@ int main(void)
 {
 
     int A, B, C, D, E, F, X;
-    scanf("%d %d %d %d %d %d %d", &A, &B, &C, &D, &E, &F, &X);
+    A = 4;
+    B = 3;
+    C = 3;
+    D = 6;
+    E = 2;
+    F = 5;
+    X = 10;
 
-    int a = A * B;
+    int a = 0;
+    int b = 0;
 
-    int b = D * E;
+    for (int i = 0; i <= X; i++)
+    {
+        if (X > (A * B))
+        {
+            a = (X - (A + C)) * B;
+        }
+    }
+    printf("%d\n", a);
 
-    if (a > b)
-    {
-        printf("Takahashi\n");
-    }
-    if (b > a)
-    {
-        printf("Aoki\n");
-    }
-    if (a == b)
-    {
-        printf("Draw\n");
-    }
+    // if (a > b)
+    // {
+    //     printf("Takahashi\n");
+    // }
+    // if (b > a)
+    // {
+    //     printf("Aoki\n");
+    // }
+    // if (a == b)
+    // {
+    //     printf("Draw\n");
+    // }
 }
