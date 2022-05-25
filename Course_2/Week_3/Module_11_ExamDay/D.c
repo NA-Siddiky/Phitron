@@ -16,22 +16,17 @@ int main()
 
     char str[n + 1];
     scanf("%s", str);
-    int a = 0, b = 0;
-    for (int i = 0; i < strlen(str); i++)
+    int a, b;
+    a = b = 0;
+    for (int i = 0; i < n; i++)
     {
         if (str[i] == 'A')
-        {
             a++;
-        }
+
         if (str[i] == 'D')
-        {
             b++;
-        }
     }
-    if (a == b)
-    {
-        printf("Friendship\n");
-    }
+
     if (a > b)
     {
         printf("Anton\n");
@@ -40,6 +35,9 @@ int main()
     {
         printf("Danik\n");
     }
-
+    if (a == b)
+    {
+        printf("Friendship\n");
+    }
     return 0;
 }
