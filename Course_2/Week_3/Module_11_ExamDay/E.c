@@ -54,29 +54,31 @@ int main(void)
     for (int i = 0; i <= X; i++)
     {
 
-        if (A < X)
+        if (A < X || D < X)
         {
-            if (X > (A + C))
+            if (X > (A + C) || X > (D + F))
             {
                 a = (A + (X - (A + C))) * B;
-            }
-            else
-            {
-                a = A * B;
-            }
-        }
-
-        if (D < X)
-        {
-            if (X > (D + F))
-            {
                 b = (D + (X - (D + F))) * E;
             }
             else
             {
+                a = A * B;
                 b = D * E;
             }
         }
+
+        // if (D < X)
+        // {
+        //     if (X > (D + F))
+        //     {
+        //         b = (D + (X - (D + F))) * E;
+        //     }
+        //     else
+        //     {
+        //         b = D * E;
+        //     }
+        // }
     }
     // printf("%d\n", a);
     // printf("%d\n", b);
