@@ -10,6 +10,8 @@ int main(void)
     // E = 2;
     // F = 5;
     // X = 10;
+
+    // inputes
     scanf("%d %d %d %d %d %d %d", &A, &B, &C, &D, &E, &F, &X);
 
     int a, b, t1, t2, t3, p1, p2, p3;
