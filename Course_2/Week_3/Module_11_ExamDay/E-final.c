@@ -3,15 +3,15 @@ int main(void)
 {
 
     int A, B, C, D, E, F, X;
-    // A = 4;
-    // B = 3;
-    // C = 3;
-    // D = 6;
-    // E = 2;
-    // F = 5;
-    // X = 10;
+    A = 4;
+    B = 3;
+    C = 3;
+    D = 6;
+    E = 2;
+    F = 5;
+    X = 10;
 
-    scanf("%d %d %d %d %d %d %d", &A, &B, &C, &D, &E, &F, &X);
+    // scanf("%d %d %d %d %d %d %d", &A, &B, &C, &D, &E, &F, &X);
 
     int a, b, t1, t2, t3, p1, p2, p3;
     a = b = t1 = t2 = t3 = p1 = p2 = p3 = 0;
