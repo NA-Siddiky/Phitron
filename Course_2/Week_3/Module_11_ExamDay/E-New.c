@@ -3,32 +3,44 @@ int main()
 {
 
     int A, B, C, X;
-    A = 4;
-    B = 3;
-    C = 3;
-    X = 30;
+    A = 1;
+    B = 1;
+    C = 1;
+
+    X = 10;
 
     int sum = 0;
     sum = A + C;
 
-    int result1, result2, result3;
-    result1 = result2 = result3 = 0;
-    int count = 0;
+    int result1, result2, result3, result4, result5;
+    result1 = result2 = result3 = result4 = result5 = 0;
+    int count = 1;
 
-    while (result1 < A)
+    while (count < X)
     {
-
-        result1 = X - sum;
-        if (result1 > sum)
+        if (X > A)
         {
-            result2 = result1 - sum;
+            result1 = X / sum;
         }
-        printf("%d %d\n", count, result2);
+        result2 = result1 * sum;
 
-        // if (result > A)
+        result3 = X - result2;
+
+        if (result3 > A)
+        {
+            result4 = result3 - A;
+        }
+
+        result5 = (((result1 + 1) * A) * B) - result3;
+
+        printf("%d %d %d %d %d %d\n", count, result1, result2, result3, result4, result5);
+        // result1 = X - sum;
+        // if (result1 > sum)
         // {
+        //     result2 = result1 - sum;
         // }
-        result1++;
+        // printf("%d %d\n", count, result2);
+        count++;
     }
 
     return 0;
