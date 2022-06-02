@@ -6,7 +6,6 @@ int main()
     A = 1;
     B = 1;
     C = 1;
-
     X = 10;
 
     int sum = 0;
