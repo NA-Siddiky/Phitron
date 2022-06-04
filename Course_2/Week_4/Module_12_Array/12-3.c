@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 int main()
 {
@@ -11,5 +12,20 @@ int main()
     {
         printf("%lf\n", values3[i]);
     }
+    return 0;
+}
+*/
+
+#include <stdio.h>
+int main()
+{
+    char words[] = {'h', 'e', 'l', 'p'};
+
+    int sz = sizeof(words) / sizeof(words[0]);
+    for (int i = 0; i < sz; i++)
+    {
+        putchar(words[i]);
+    }
+
     return 0;
 }
