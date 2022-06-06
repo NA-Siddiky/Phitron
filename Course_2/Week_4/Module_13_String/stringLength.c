@@ -1,21 +1,43 @@
+// #include <stdio.h>
+// int string_length(char str[])
+// {
+//     int i, length = 0;
+//     for (i = 0; str[i] != '\0'; i++)
+//     {
+//         length++;
+//     }
+//     return length;
+// }
+// int main()
+// {
+//     char country[100];
+//     int length;
+//     while (1 == scanf("%s", country))
+//     {
+//         length = string_length(country);
+//         printf("length: %d\n", length);
+//     }
+//     return 0;
+// }
+
 #include <stdio.h>
-int string_length(char str[])
-{
-    int i, length = 0;
-    for (i = 0; str[i] != '\0'; i++)
-    {
-        length++;
-    }
-    return length;
-}
+#include <string.h>
+
 int main()
 {
-    char country[100];
-    int length;
-    while (1 == scanf("%s", country))
+
+    char str[] = "Pradip kumar Chakraborty";
+    // printf("Length of String is %lu\n", strlen(str));
+    // printf("Size of String is %lu\n", sizeof(str));
+
+    int count = 0;
+    for (int i = 0; str[i] != '\0'; i++)
     {
-        length = string_length(country);
-        printf("length: %d\n", length);
+        if (str[i] == 32)
+        {
+            continue;
+        }
+        count++;
     }
-    return 0;
+    printf("count: %d\n", count);
 }
