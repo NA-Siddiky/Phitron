@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    char country[] = {'B', 'a', 'n', 'g', 'l', 'a', 'd', 'e', 's', 'h'};
+    char country[] = {'B', 'a', 'n', 'g', 'l', 'a', 'd', 'e', 's', 'h', '\0'};
     int i, length;
     printf("%s\n", country);
     length = 10;
