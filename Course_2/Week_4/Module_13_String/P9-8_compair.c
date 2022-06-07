@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 int string_compare(char a[], char b[])
 {
     int i, j;
