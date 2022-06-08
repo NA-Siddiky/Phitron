@@ -15,8 +15,8 @@ int main()
             count++;
         }
     }
-    printf("Largest element = %d", result[0]);
-    printf("Count element = %d", count);
+    printf("Largest element = %d\n", result[0]);
+    printf("Count element = %d\n", count);
     return 0;
 
     // int Maximum, MaximumOccurs;
