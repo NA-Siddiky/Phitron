@@ -11,7 +11,6 @@ int main()
     {
         current = to[current];
     }
-
     printf("%d", current);
 
     return 0;
