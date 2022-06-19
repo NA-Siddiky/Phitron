@@ -13,26 +13,42 @@ int main()
     // {
     //     printf("%d ", score[i]);
     // }
-    int answer = 0;
-    for (int i = 0; i < n; i++)
+    // int answer = 0;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (i == 0)
+    //         continue;
+    //     bool isMax = true, isMin = true;
+    //     for (int j = 0; j < i; j++)
+    //     {
+    //         if (score[j] <= score[i])
+    //         {
+    //             isMin = false;
+    //         }
+    //         if (score[j] >= score[i])
+    //         {
+    //             isMax = false;
+    //         }
+    //     }
+    //     if (isMax || isMin)
+    //     {
+    //         answer++;
+    //     }
+    // }
+    int answer = 0, minvalue = score[0], maxvalue = score[0];
+    for (int i = 1; i < n; i++)
     {
-        if (i == 0)
-            continue;
-        bool isMax = true, isMin = true;
-        for (int j = 0; j < i; j++)
-        {
-            if (score[j] <= score[i])
-            {
-                isMin = false;
-            }
-            if (score[j] >= score[i])
-            {
-                isMax = false;
-            }
-        }
-        if (isMax || isMin)
+        if (score[i] > maxvalue || score[i] < minvalue)
         {
             answer++;
+        }
+        if (score[i] > maxvalue)
+        {
+            maxvalue = score[i];
+        }
+        if (score[i] < minvalue)
+        {
+            minvalue = score[i];
         }
     }
     printf("%d\n", answer);
