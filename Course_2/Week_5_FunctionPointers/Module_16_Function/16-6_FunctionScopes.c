@@ -1,8 +1,13 @@
 #include <stdio.h>
 
 int temp;
+// int count = 0;
+static int count = 0;
 int getMin(int a, int b)
 {
+
+    count++;
+
     if (a < b)
         temp = a;
     else
@@ -21,6 +26,7 @@ int main()
     int a = 100, b = 12;
     int mn = getMin(a, b);
     printf("%d\n", temp);
+    printf("%d", count);
     // int a = 10;
     // a = makeDouble(a);
     // printf("%d", a);
