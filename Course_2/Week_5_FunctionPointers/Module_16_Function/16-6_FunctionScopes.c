@@ -1,8 +1,8 @@
 #include <stdio.h>
 
+int temp;
 int getMin(int a, int b)
 {
-    int temp;
     if (a < b)
         temp = a;
     else
@@ -18,9 +18,10 @@ int makeDouble(int x)
 
 int main()
 {
-    // int a = 10, b = 12;
-    // int mn = getMin(a, b);
-    int a = 10;
-    a = makeDouble(a);
-    printf("%d", a);
+    int a = 100, b = 12;
+    int mn = getMin(a, b);
+    printf("%d\n", temp);
+    // int a = 10;
+    // a = makeDouble(a);
+    // printf("%d", a);
 }
