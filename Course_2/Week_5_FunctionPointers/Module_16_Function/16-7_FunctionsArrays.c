@@ -38,18 +38,18 @@ void reverse(char str[])
 }
 int main()
 {
-    // int a[] = {4, 5, 6, 7, 2, 9};
+    int a[] = {4, 5, 6, 7, 2, 9};
 
-    // int sz = sizeof(a) / sizeof(a[0]);
-    // // printf("%d", sz);
+    int sz = sizeof(a) / sizeof(a[0]);
+    // printf("%d", sz);
 
-    // printf("%d\n", getArrayMin(sz, a));
+    printf("%d\n", getArrayMin(sz, a));
 
-    // makeDouble(sz, a);
-    // for (int i = 0; i < sz; i++)
-    // {
-    //     printf("%d  ", a[i]);
-    // }
+    makeDouble(sz, a);
+    for (int i = 0; i < sz; i++)
+    {
+        printf("%d  ", a[i]);
+    }
 
     char str[] = "hello";
     reverse(str);
