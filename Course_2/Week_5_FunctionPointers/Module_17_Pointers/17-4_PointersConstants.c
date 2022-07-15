@@ -4,5 +4,5 @@ int main()
     const int N = 20;
     int *pN = &N;
     *pN = 10;
-    printf("%d", N);
+    printf("%d\n", N);
 }
