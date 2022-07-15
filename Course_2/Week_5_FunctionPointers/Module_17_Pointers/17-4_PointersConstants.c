@@ -5,4 +5,5 @@ int main()
     int *pN = &N;
     *pN = 10;
     printf("%d\n", N);
+    // code updated
 }
