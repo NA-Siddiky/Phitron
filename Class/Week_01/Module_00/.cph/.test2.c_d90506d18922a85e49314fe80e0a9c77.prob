@@ -1,0 +1,1 @@
+{"name":"Local: test2","url":"d:\\Course\\New folder\\Phitron\\Class\\Week_01\\Module_00\\test2.c","tests":[{"id":1680343509064,"input":"","output":"pch points to>> 6422039 which is a\nnow address is : 6422040"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Course\\New folder\\Phitron\\Class\\Week_01\\Module_00\\test2.c","group":"local","local":true}
