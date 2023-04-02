@@ -9,11 +9,11 @@ int main()
     }
     else if (tk >= 50)
     {
-        printf("parity good");
+        printf("parity good\n");
     }
     else if (tk >= 30)
     {
-        printf("just good");
+        printf("just good\n");
     }
     else
     {
