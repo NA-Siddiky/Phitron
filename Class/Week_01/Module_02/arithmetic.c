@@ -2,8 +2,12 @@
 int main()
 {
     // printf("Hello");
-    int a = 10, b = 3;
-    int mod = a % b;
+
+    int a, b;
+    scanf("%d"
+          "%d",
+          &a, &b);
+    int mod = a + b;
     printf("%d", mod);
     return 0;
 }
