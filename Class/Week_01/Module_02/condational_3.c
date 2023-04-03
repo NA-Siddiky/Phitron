@@ -12,7 +12,7 @@ int main()
         }
         else
         {
-            printf("Come back\n");
+            printf("Come back...\n");
         }
     }
 
