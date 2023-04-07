@@ -5,6 +5,6 @@
 
 int main()
 {
-    printf("I Love Practice...");
+    printf("Hello");
     return 0;
 }
