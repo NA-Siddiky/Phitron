@@ -7,31 +7,31 @@ int main()
 
     if (a + b - c == d)
     {
-        printf("YES");
+        printf("YES\n");
     }
     else if (a + b * c == d)
     {
-        printf("YES");
+        printf("YES\n");
     }
     else if (a - b + c == d)
     {
-        printf("YES");
+        printf("YES\n");
     }
     else if (a - b * c == d)
     {
-        printf("YES");
+        printf("YES\n");
     }
     else if (a * b + c == d)
     {
-        printf("YES");
+        printf("YES\n");
     }
     else if (a * b - c == d)
     {
-        printf("YES");
+        printf("YES\n");
     }
     else
     {
-        printf("NO");
+        printf("NO\n");
     }
     return 0;
 }
