@@ -1,9 +1,14 @@
 #include <stdio.h>
-
 int main()
 {
-    int ar[10];
-    ar[9] = 532;
-    printf("%d\n", ar[9]);
+    int ar[5];
+    for (int i = 0; i < 5; i++)
+    {
+        scanf("%d", &ar[i]);
+    }
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d\n", ar[i]);
+    }
     return 0;
 }
