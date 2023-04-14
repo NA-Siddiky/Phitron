@@ -4,9 +4,9 @@ int main()
 {
     int a, b, c;
     scanf("%d %d %d", &a, &b, &c);
-    int max = 0;
+    int max = 1;
     int smallest = a;
-    for (int i = 0; smallest >= max; i++)
+    while (smallest > max)
     {
 
         if (b < smallest)
