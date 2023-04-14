@@ -2,34 +2,40 @@
 
 int main()
 {
-    int a, b, c;
-    scanf("%d %d %d", &a, &b, &c);
-    int max = 1;
-    int smallest = a;
-    while (smallest > max)
+    int eye, mouth, body;
+    scanf("%d %d %d", &eye, &mouth, &body);
+    int max = 0;
+
+    while (1)
     {
-
-        if (b < smallest)
+        if (eye <= 0 || body <= 0)
         {
-            smallest = b;
+            break;
         }
 
-        if (c < smallest)
+        if (eye >= 1 && mouth >= 1 && body >= 1)
         {
-            smallest = c;
+            max++;
+            eye--;
+            mouth--;
+            body--;
         }
-
-        a -= smallest;
-        b -= smallest;
-        c -= smallest;
-
-        printf("smallest = %d\n", smallest);
-        max += smallest;
-        printf("max = %d \n", max);
+        else if (eye >= 2 && mouth >= 1 && body >= 1)
+        {
+            max++;
+            eye -= 2;
+            mouth--;
+            body--;
+        }
+        else if (eye >= 2 && body >= 1)
+        {
+            max++;
+            eye -= 2;
+            body--;
+        }
     }
 
-    printf("%d %d %d \n", a, b, c);
-    printf("%d \n", max);
+    printf("%d", max);
 
     return 0;
 }
