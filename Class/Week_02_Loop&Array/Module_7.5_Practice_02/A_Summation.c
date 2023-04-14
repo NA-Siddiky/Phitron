@@ -5,7 +5,7 @@ int main()
     int n;
     scanf("%d", &n);
     int ar[n];
-    int sum = 0;
+    long long sum = 0;
 
     for (int i = 0; i < n; i++)
     {
@@ -19,8 +19,12 @@ int main()
         {
             // printf("%d\n", ar[i]);
             sum = sum + ar[i];
+            if (sum < 0)
+            {
+                sum = sum * (-1);
+            }
         }
     }
-    printf("%d\n", sum);
+    printf("%lld\n", sum);
     return 0;
 }
