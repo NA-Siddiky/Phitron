@@ -11,6 +11,22 @@ int main()
         scanf("%d \n", &ar[i]);
     }
 
+    // for(int i=0; i<n; i++){
+
+    // }
+    int i = 0;
+    int j = n - 1;
+
+    while (i < j)
+    {
+        int tmp = ar[i];
+        ar[i] = ar[j];
+        ar[j] = tmp;
+
+        i++;
+        j--;
+    }
+
     for (int i = 0; i < n; i++)
     {
         printf("%d ", ar[i]);
