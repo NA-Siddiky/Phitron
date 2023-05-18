@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-void fun(int ar[], int n)
+void fun(double ar[], int n)
 {
     // printf(">%d\n", ar[4]);
     for (int i = 0; i < n; i++)
     {
-        printf("%d ", ar[i]);
+        printf("%0.2lf ", ar[i]);
     }
 }
 
 int main()
 {
-    int ar[5] = {10, 20, 30, 40, 50};
+    double ar[5] = {10.5, 20.5, 30.3, 40.2, 50.5};
     // printf("%d\n", ar[1]);
     // printf("%d\n", 1 [ar]);
 
