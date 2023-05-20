@@ -1,24 +1,22 @@
 #include <stdio.h>
-
-int findMissingNumber(int sum, int num1, int num2, int num3)
-{
-    int totalSum = num1 + num2 + num3;
-    return sum - totalSum;
-}
-
 int main()
 {
-    int T;
-    scanf("%d", &T);
-
-    for (int i = 0; i < T; i++)
+    // declare 2d array
+    int a[5][3];
+    for (int i = 0; i < 5; i++)
     {
-        int sum, num1, num2, num3;
-        scanf("%d %d %d %d", &sum, &num1, &num2, &num3);
-
-        int missingNumber = findMissingNumber(sum, num1, num2, num3);
-        printf("%d\n", missingNumber);
+        for (int j = 0; j < 3; j++)
+        {
+            scanf("%d", &a[i][j]);
+        }
     }
-
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            printf("%d ", a[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }
