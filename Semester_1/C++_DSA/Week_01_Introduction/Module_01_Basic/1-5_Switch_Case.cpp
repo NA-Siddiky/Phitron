@@ -25,27 +25,39 @@ int main()
     //     cout << "Didn't maatch" << endl;
     // }
 
-    char a;
-    cin >> a;
-    switch (a)
+    // char a;
+    // cin >> a;
+    // switch (a)
+    // {
+    // case 'a':
+    //     cout << "Vowel" << endl;
+    //     break;
+    // case 'e':
+    //     cout << "Vowel" << endl;
+    //     break;
+    // case 'i':
+    //     cout << "Vowel" << endl;
+    //     break;
+    // case 'o':
+    //     cout << "Vowel" << endl;
+    //     break;
+    // case 'u':
+    //     cout << "Vowel" << endl;
+    //     break;
+    // default:
+    //     cout << "Consonant" << endl;
+    // }
+
+    int n;
+    cin >> n;
+    int remaining = n % 2;
+    switch (remaining)
     {
-    case 'a':
-        cout << "Vowel" << endl;
-        break;
-    case 'e':
-        cout << "Vowel" << endl;
-        break;
-    case 'i':
-        cout << "Vowel" << endl;
-        break;
-    case 'o':
-        cout << "Vowel" << endl;
-        break;
-    case 'u':
-        cout << "Vowel" << endl;
+    case 0:
+        cout << "Even" << endl;
         break;
     default:
-        cout << "Consonant" << endl;
+        cout << "Odd" << endl;
     }
 
     return 0;
