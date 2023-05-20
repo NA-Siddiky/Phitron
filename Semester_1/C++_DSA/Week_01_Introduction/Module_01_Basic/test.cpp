@@ -2,6 +2,6 @@
 
 int main()
 {
-    printf("Test 2");
+    printf("Test CPP");
     return 0;
 }
