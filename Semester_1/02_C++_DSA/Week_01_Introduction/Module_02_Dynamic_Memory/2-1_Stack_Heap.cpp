@@ -8,6 +8,7 @@ int main()
     cin >> a >> b;
     swap(a, b);
     cout << a << " " << b << endl;
+    cout << max(a, b);
 
     return 0;
 }
