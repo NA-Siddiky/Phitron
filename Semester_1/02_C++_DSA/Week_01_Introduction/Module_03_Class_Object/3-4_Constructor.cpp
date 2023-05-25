@@ -9,6 +9,7 @@ public:
     int roll;
     int cls;
     char section;
+
     Student(int r, int s, int c, char *n)
     {
         roll = r;
@@ -21,11 +22,10 @@ public:
 int main()
 {
     Student s(29, 'A', 7, "Rahim");
-
     Student k(30, 'B', 8, "Karim");
 
     cout << s.name << endl;
-    cout << k.name;
+    cout << k.name << endl;
 
     return 0;
 }
