@@ -3,6 +3,19 @@
 using namespace std;
 int main()
 {
-    cout << "Hello World" << endl;
+    string a = "Hello_";
+    string b = "World";
+
+    // a += b;
+    // a.append(b);
+    // cout << a << endl;
+    // cout << b << endl;
+
+    a.push_back('Z');
+    cout << a << endl;
+
+    a.pop_back();
+    cout << a << endl;
+
     return 0;
 }
