@@ -15,20 +15,21 @@ int main()
         string s;
         cin >> s;
 
-        int balloons = 0;
         unordered_map<char, int> solved_problems;
-        bool first_solved = false;
+        int balloons = 0;
+        int first_solved = 0;
 
-        for (char c : s)
+        for (int i = 0; i < n; i++)
         {
-            if (solved_problems.find(c) == solved_problems.end())
+            char c = s[i];
+            if (solved_problems[c] == 0)
             {
                 solved_problems[c] = 1;
                 balloons++;
-                if (!first_solved)
+                if (i == first_solved)
                 {
                     balloons++;
-                    first_solved = true;
+                    first_solved++;
                 }
             }
         }
