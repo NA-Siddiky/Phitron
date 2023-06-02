@@ -1,7 +1,5 @@
 #include <iostream>
-#include <string>
-#include <sstream> // Added include directive for <sstream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 class StringInput
