@@ -17,7 +17,7 @@ int main()
     // vector<int> v(v2);
 
     // type 5;
-    int a[6] = {1, 2, 3, 4, 5, 6};
+    int a[6] = {1, 2, 3, 4, 5, 7};
     vector<int> v(a, a + 6);
 
     for (int i = 0; i < v.size(); i++)
